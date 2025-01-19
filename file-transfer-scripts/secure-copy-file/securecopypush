@@ -1,0 +1,20 @@
+#! /bin/bash
+
+echo "Send File: "
+
+read sendfile
+
+echo "User Name: "
+
+read username
+
+echo "Host: "
+
+read host
+
+echo "Path to Drop: "
+echo "(Leave Blank To Copy To User Home Directory)"
+
+read path
+
+scp ${sendfile} ${username}@${host}:~${path}

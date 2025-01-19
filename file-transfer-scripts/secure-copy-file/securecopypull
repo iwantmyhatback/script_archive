@@ -1,0 +1,21 @@
+#! /bin/bash
+
+echo "Path To File You Want: "
+echo "(From Home So Backtrack If Needed)"
+
+read getfilepath
+
+echo "User Name: "
+
+read username
+
+echo "Host: "
+
+read host
+
+echo "File Name: "
+echo "(Will Drop To Desktop)"
+
+read path
+
+scp ${username}@${host}:~${getfilepath} ~/Desktop/${path}

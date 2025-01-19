@@ -1,0 +1,8 @@
+#! /bin/bash
+
+echo "Enter A Listening Port: "
+read port
+echo "Enter A 'fileName.fileExtention' To Save To (and path if desired): "
+read path
+
+nc -l -p $port > $path

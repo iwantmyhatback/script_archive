@@ -1,0 +1,10 @@
+#! /bin/bash
+
+echo "Enter Destination IP Address: "
+read destip
+echo "Enter A Port To Transfer On: "
+read port
+echo "Enter File Path To Transfer: "
+read path
+
+nc -w 3 $destip $port < $path
