@@ -35,6 +35,10 @@ Simple TCP interaction over the network to send a few commands which normalizes 
 
 
 ## Notes:
+*** API / IR Documentation ***
+[Sony Bravia API|https://pro-bravia.sony.net/develop/integrate/ip-control/index.html]
+[Python Bravia TV|https://github.com/dcnielsen90/python-bravia-tv]
+
 *** IR Command Names ***
 ```json
 {
@@ -116,7 +120,7 @@ Simple TCP interaction over the network to send a few commands which normalizes 
   "Prev": "AAAAAgAAAJcAAAA8Aw==",
   "Next": "AAAAAgAAAJcAAAA9Aw==",
   "DpadCenter": "AAAAAgAAAJcAAABKAw==",
-  "CursorUp": "AAAAAgAAAJcAAABPAw==",
+  "CursorUp":   "AAAAAgAAAJcAAABPAw==",
   "CursorDown": "AAAAAgAAAJcAAABQAw==",
   "CursorLeft": "AAAAAgAAAJcAAABNAw==",
   "CursorRight": "AAAAAgAAAJcAAABOAw==",
