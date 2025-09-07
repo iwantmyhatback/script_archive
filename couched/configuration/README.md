@@ -1,6 +1,8 @@
 # python-wrapper
 ### Environment variable options
 
+* TARGET_IP ::
+  * The local IP of the Bravia TV you are targeting
 * PYVENV_LOCATION ::
   * Path to the location for the Python Virtual Environment to be sourced or created & sourced in `shell/run.sh`
 * LOG_LOCATION :: 

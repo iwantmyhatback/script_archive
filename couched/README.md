@@ -35,11 +35,11 @@ Simple TCP interaction over the network to send a few commands which normalizes 
 
 
 ## Notes:
-**API / IR Documentation**
-<br>[Sony Bravia API](https://pro-bravia.sony.net/develop/integrate/ip-control/index.html)
-<br>[Python Bravia TV](https://github.com/dcnielsen90/python-bravia-tv)
-<br>
-**IR Command Names**<br>
+*** API / IR Documentation ***
+[Sony Bravia API|https://pro-bravia.sony.net/develop/integrate/ip-control/index.html]
+[Python Bravia TV|https://github.com/dcnielsen90/python-bravia-tv]
+
+*** IR Command Names ***
 ```json
 {
   "Num1": "AAAAAQAAAAEAAAAAAw==",

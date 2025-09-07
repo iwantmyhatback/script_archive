@@ -2,6 +2,7 @@ from bravia_tv import BraviaRC
 import types
 import logging as log
 import time
+import os
 
 
 ### Monkey-patch the method BraviaRC.set_volume_level()
@@ -37,6 +38,7 @@ def normalize_power_state():
         log.info(f'[PYTHON] ⚡️🎚️ Sending power ON state')
         braviarc.turn_on()
         power_status = braviarc.get_power_status()
+        time.sleep(2)
     
     if power_status != 'active':
         log.error('[PYTHON] ⚡️❎ Power status hasnt changed to active after get_power_status()')
@@ -254,8 +256,11 @@ def start_jellyfin_by_search(*, home_cursor = True):
 # +--------------------+
 
 # TV: 
-ip_address = 'XXX.XXX.XXX.XXX'
-pin = '0000' # The pin can be a pre-shared key (PSK) or you can receive a pin from the tv by making the pin 0000
+ip_address = os.environ.get('TARGET_IP')
+if not ip_address:
+    raise ValueError("TARGET_IP environment variable is not set")
+name = None
+pin = '7691' # The pin can be a pre-shared key (PSK) or you can receive a pin from the tv by making the pin 0000
 # Settings:
 default_volume = 10
 default_source = 'SHIELD'
